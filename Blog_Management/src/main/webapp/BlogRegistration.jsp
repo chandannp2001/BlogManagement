@@ -41,7 +41,7 @@
 		</form>
 		<div class="link">
 			<p>
-				<a href="#">View Blogs</a>
+				<a href="Home">View Blogs</a>
 			</p>
 		</div>
 	</div>

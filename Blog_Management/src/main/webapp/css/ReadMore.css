@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004080;
+    padding: 15px 30px;
+    color: white;
+    position: relative;
+}
+
+.navbar .nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #0066cc;
+}
+
+.logout-button {
+    background-color: #ff4d4d;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #ff1a1a;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form select, .search-form input, .search-form button {
+    padding: 8px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #0066cc;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.blog-details {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.blog-detail-image {
+    padding-top: -10px;
+    width: calc(70%); /* Ensure the image width fills the blog card including padding */
+    height: auto;
+    border-radius: 20px;
+    margin: -20px -20px 15px -20px; /* Adjust the margins to fill the card */
+}
+
+.blog-details h4 {
+    color: #0e0d0d;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}

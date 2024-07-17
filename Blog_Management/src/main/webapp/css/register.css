@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: hsl(109, 7%, 71%);
+}
+
+.container {
+	width: 50%;
+	margin: auto;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0px 0px 10px 0px #000;
+	margin-top: 50px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+/* Style for the submit button */
+.form-group button {
+	width: 100%;
+	padding: 10px;
+	background-color: #2196F3; /* Blue background */
+	border: none;
+	color: white;
+	font-size: 16px;
+	border-radius: 25px; /* Fully rounded corners */
+	transition: background-color 0.3s, transform 0.3s;
+	/* Smooth transition */
+}
+
+.form-group button:hover {
+	background-color: #1976D2; /* Darker blue background on hover */
+	transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.form-group button:active {
+	background-color: #0D47A1; /* Even darker blue background on click */
+	transform: scale(0.95); /* Slightly shrink button on click */
+	box-shadow: 0 5px #666; /* Box shadow on click */
+}
+
+.login-link {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.login-link a {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+.login-link a:hover {
+	text-decoration: underline;
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+}

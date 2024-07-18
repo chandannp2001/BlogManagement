@@ -1,98 +1,101 @@
 @charset "UTF-8";
 
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background: hsl(109, 7%, 71%);
-	/* Gradient background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: hsl(109, 7%, 71%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-	width: 100%;
-	max-width: 400px;
-	margin: auto;
-	background: #fff;
-	padding: 20px;
-	box-shadow: 0px 0px 15px 0px #000;
-	border-radius: 10px;
-	margin-top: 50px;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 0px #000;
+    border-radius: 10px;
+    text-align: center;
 }
 
 h2 {
-	text-align: center;
-	margin-bottom: 20px;
-	color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .form-group {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 .form-group label {
-	display: block;
-	margin-bottom: 5px;
-	color: #555;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
 }
 
 .form-group input {
-	width: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .form-group button {
-	width: 100%;
-	padding: 10px;
-	background-color: #4CAF50; /* Green background */
-	border: none;
-	color: white;
-	font-size: 16px;
-	border-radius: 25px; /* Fully rounded corners */
-	transition: background-color 0.3s, transform 0.3s;
-	/* Smooth transition */
+    width: 100%;
+    padding: 10px;
+    background-color: #004080; /* Navbar background color */
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px; /* Fully rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition */
 }
 
 .form-group button:hover {
-	background-color: #1976D2; /* Darker green background on hover */
-	transform: scale(1.05); /* Slightly enlarge button on hover */
+    background-color: #0066cc; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
 .form-group button:active {
-	background-color: #0D47A1; /* Even darker green background on click */
-	transform: scale(0.95); /* Slightly shrink button on click */
-	box-shadow: 0 5px #666; /* Box shadow on click */
+    background-color: #003366; /* Even darker background on click */
+    transform: scale(0.95); /* Slightly shrink button on click */
+    box-shadow: 0 5px #666; /* Box shadow on click */
 }
 
 .error {
-	color: red;
-	font-size: 14px;
+    color: red;
+    font-size: 14px;
 }
 
 .error.message {
-	text-align: center;
-	margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .create-account-link {
-	text-align: center;
-	margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .create-account-link a {
-	color: #337ab7;
-	text-decoration: none;
+    color: #337ab7;
+    text-decoration: none;
 }
 
 .create-account-link a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Responsive styles */
-@media ( max-width : 600px) {
-	.container {
-		width: 90%;
-	}
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
 }

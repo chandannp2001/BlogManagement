@@ -37,7 +37,7 @@
            <%
                 if (blog.getImageVideoPath() != null) {
             %> 
-            <img src="img/1173346.png" alt="<%= blog.getTitle() %>" class="blog-detail-image">
+            <img src="<%=blog.getImageVideoPath() %>" alt="<%= blog.getTitle() %>" class="blog-detail-image">
             <!-- Replace with blog.getImageVideoPath() when the image path is available -->
              <%
                 }

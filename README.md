@@ -77,6 +77,8 @@ Username: yourUsername
 Password: yourPassword
 (You can create your own users through the database or modify the code to include user registration.)
 
+Change the Save Directory for files which will uploaded by admin as your requriement by changing SAVE_DIR variable in BlogRegistrationServlet and UpdateBlogServlet class in com.sunbase.servlets package
+
 Admin Dashboard:
 
 Create, edit, and delete blog posts.

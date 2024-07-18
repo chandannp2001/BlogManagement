@@ -21,7 +21,11 @@ import java.io.IOException;
 @MultipartConfig
 public class UpdateBlogServlet extends HttpServlet {
 	
-	private static final String SAVE_DIR = "C:\\Users\\chand\\eclipse-workspace\\Blog_Management\\src\\main\\webapp\\uploads";
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private static final String SAVE_DIR = "C:\\Users\\chand\\git\\repository4\\Blog_Management\\src\\main\\webapp\\uploads";
 	private BlogDAO blogDAO = new BlogDAOImpl();
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

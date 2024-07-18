@@ -22,7 +22,7 @@ import com.sunbase.models.User;
 public class BlogRegistrationServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	private static final String SAVE_DIR = "C:\\Users\\chand\\eclipse-workspace\\Blog_Management\\src\\main\\webapp\\uploads";
+	private static final String SAVE_DIR = "C:\\Users\\chand\\git\\repository4\\Blog_Management\\src\\main\\webapp\\uploads";
 	private BlogDAO blogDAOImpl;
 
 	@Override

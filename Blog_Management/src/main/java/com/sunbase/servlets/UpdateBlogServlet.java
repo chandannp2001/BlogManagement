@@ -40,7 +40,7 @@ public class UpdateBlogServlet extends HttpServlet {
 			String title = request.getParameter("title");
 			String content = request.getParameter("content");
 			Part filePart = request.getPart("file");
-			System.out.println(filePart.getSize());
+//			System.out.println(filePart.getSize());
 			
 			Blog blog = blogDAO.getBlogById(id);
 			blog.setTitle(title);
@@ -48,7 +48,7 @@ public class UpdateBlogServlet extends HttpServlet {
 			
 			if(filePart.getSize()>0) {
 				String fileName = getFileName(filePart);
-				System.out.println(getServletContext().getRealPath("/"));
+//				System.out.println(getServletContext().getRealPath("/"));
 				String savePath = SAVE_DIR + File.separator + fileName;
 
 				String savedfiePath = "uploads/" + fileName;

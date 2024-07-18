@@ -29,15 +29,11 @@ Apache Tomcat
 MySQL Database
 
 Installation
-
-  Clone the repository:
-  
-  git clone https://github.com/your-username/blog-management-system.git
+  Clone the repository: git clone https://github.com/your-username/blog-management-system.git
   cd blog-management-system
+
 Create a MySQL database:
 
-sql
-Copy code
 CREATE DATABASE blog_db;
 USE blog_db;
 
@@ -58,35 +54,27 @@ CREATE TABLE blogs (
 );
 Configure database connection:
 
-Edit the db.properties file to match your MySQL configuration:
+Edit the DatabaseUtil.class  to match your MySQL configuration:
 
 properties
-Copy code
 jdbc.url=jdbc:mysql://localhost:3306/blog_db
 jdbc.username=root
 jdbc.password=yourpassword
-Build the project (optional, if using Maven):
 
-bash
-Copy code
-mvn clean install
 Deploy to Apache Tomcat:
 
-Copy the generated .war file from the target directory to the webapps directory of your Apache Tomcat server.
-
-Alternatively, you can set up your IDE (e.g., Eclipse, IntelliJ) to deploy the project directly to Tomcat.
+ you can set up your IDE (e.g., Eclipse, IntelliJ) to deploy the project directly to Tomcat.
 
 Start the server:
 
 Start your Apache Tomcat server and navigate to http://localhost:8080/blog-management-system.
 
-Usage
-Login:
+Create a account using register page before login
 
 Use the following credentials to log in as an admin:
 
-Username: admin
-Password: admin
+Username: yourUsername
+Password: yourPassword
 (You can create your own users through the database or modify the code to include user registration.)
 
 Admin Dashboard:
@@ -98,9 +86,6 @@ Viewing Blogs:
 
 Users can view blog summaries on the main page.
 Click "Read More" to view detailed blog content.
-Contributing
-Feel free to fork this project and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
-
 
 Acknowledgments
 Thanks to Tap Academy for their guidance and support.
